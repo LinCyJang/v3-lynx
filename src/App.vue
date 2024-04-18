@@ -1,17 +1,19 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import { useCursor } from 'ipad-cursor/vue';
+useCursor()
 </script>
 
 <template>
   <div>
     <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
+      <img src="/vite.svg" class="logo" alt="Vite logo"  data-cursor="block"/>
     </a>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" data-cursor="block" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue" data-cursor="block" />
 </template>
 
 <style scoped>

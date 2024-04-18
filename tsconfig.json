@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    // path
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["scr/*"]
+    },
+
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
