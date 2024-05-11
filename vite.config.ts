@@ -2,15 +2,14 @@ import { defineConfig, resolveConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import WindiCSS from 'vite-plugin-windicss'
 import { viteMockServe } from 'vite-plugin-mock'
-
+import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: './',
-  // resolve: {
-  //   alias: {
-  //     "@": resolveConfig(__dirname, "./src")
-  //   }
-  // },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
+  },
   // 服务配置
   server: {
     // 主机

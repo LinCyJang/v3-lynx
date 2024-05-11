@@ -1,20 +1,12 @@
+<template>
+  <div class="router-app">
+    <router-view></router-view>
+  </div>
+</template>
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import { useCursor } from 'ipad-cursor/vue';
-useCursor()
 </script>
 
-<template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo"  data-cursor="block"/>
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" data-cursor="block" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" data-cursor="block" />
-</template>
+
 
 <style scoped>
 .logo {
@@ -28,5 +20,9 @@ useCursor()
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+#app{
+  width: 100%;
+  height: 100vh;
 }
 </style>
